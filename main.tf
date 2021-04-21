@@ -15,10 +15,10 @@ terraform {
     }
   }
    backend "remote" {
-    organization = "replace_me"
+    organization = "zm-intern06"
 
     workspaces {
-      name = "gh_demo"
+      name = "testIntegration"
     }
   }
 }
