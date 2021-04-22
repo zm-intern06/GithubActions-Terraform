@@ -28,6 +28,11 @@ resource "azurerm_resource_group" "rg" {
   location = "westeurope"
 }
 
+resource "azurerm_resource_group" "arg" {
+  name     = "recourcevt"
+  location = "westeurope"
+}
+
 resource "azurerm_storage_account" "storage" {
   name                     = "testterraf"
   resource_group_name      = azurerm_resource_group.rg.name
